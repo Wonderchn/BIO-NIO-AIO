@@ -13,6 +13,11 @@ import java.net.Socket;
  */
 public class Server  {
     public static void main(String[] args) {
+        /**
+         * 一个线程只能接受一个客户端
+         * 如果我们想要接收多个客户端
+         * 那么我们需要引入多线程机制
+         */
         try {
             //1.定义一个ServerSocket对象进行服务端的端口注册
             ServerSocket ss = new ServerSocket(9999);
