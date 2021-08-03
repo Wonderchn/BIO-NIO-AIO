@@ -19,7 +19,7 @@ public class Server  {
             //4.把字节输入流包装成一个缓冲字符输入流
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
             String msg;
-            while( (msg = br.readLine())!=null){
+            if ( (msg = br.readLine())!=null){
                 System.out.println("服务端接收到" + msg);
             }
         } catch (IOException e) {
