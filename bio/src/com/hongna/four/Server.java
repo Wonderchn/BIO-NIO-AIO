@@ -17,7 +17,7 @@ public class Server {
 
             while (true){
                 Socket socket = ss.accept();
-                //3.把socket对象交给一个线程池进行处理
+                //3.把socket对象交给线程池的其中一个任务进行处理
                 Runnable target = new ServerRunnableTarget(socket);
                 pool.execute(target);
 
