@@ -24,15 +24,17 @@ public class ServerReaderThread extends Thread{
             }
 
         }catch (Exception e){
-            System.out.println("当前有人下线");
-            //在线socket集合中
+            System.out.println("当前有人下线了");
+            //在线socket集合中，移除本socket
             Server.allSocketOnline.remove(socket);
         }
     }
 
     /**
      * 把当前客户端发来的消息发送给全部在线的socket
-     * @param msg
+     *
+     * @param msg 当前客户端收到的消息
+     *
      */
     private void sendMessageClient(String msg) throws IOException {
         for (Socket ss : Server.allSocketOnline){
