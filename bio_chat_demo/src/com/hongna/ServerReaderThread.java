@@ -21,6 +21,7 @@ public class ServerReaderThread extends Thread{
             while ((msg = br.readLine())!=null){
                 //2.服务端接受到了客户端客户端的处理之后，是需要推送给当前所有的在线socket
                 sendMessageClient(msg);
+                //2021年8月18日 22:35:41 后面再增加修改
             }
 
         }catch (Exception e){
