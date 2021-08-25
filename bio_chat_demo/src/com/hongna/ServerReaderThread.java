@@ -35,7 +35,7 @@ public class ServerReaderThread extends Thread{
 
     /**
      * 把当前客户端发来的消息发送给全部在线的socket
-     *  当前需要更新
+     * 修改原有代码，代码修正
      * @param msg 当前客户端收到的消息
      *
      */
