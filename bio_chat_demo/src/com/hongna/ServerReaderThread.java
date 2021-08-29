@@ -28,7 +28,7 @@ public class ServerReaderThread extends Thread{
             System.out.println("当前有人下线了");
             //在线socket集合中，移除本socket
             //代码完整
-            //
+            //勇敢一点，我们都可以
             Server.allSocketOnline.remove(socket);
         }
     }
