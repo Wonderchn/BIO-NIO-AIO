@@ -27,6 +27,8 @@ public class Server {
                 //把登录的客户端socket存入到一个在线集合中去，连接一个socket就存储到socket集合中去
                 allSocketOnline.add(socket);
                 //为当前登录成功的socket分配一个独立的线程处理与之通信
+                //代码更新
+                //2021年9月2日 23:01:38
                 new ServerReaderThread(socket);
             }
         } catch (IOException e) {
