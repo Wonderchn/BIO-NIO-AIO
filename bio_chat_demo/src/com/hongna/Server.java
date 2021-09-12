@@ -29,6 +29,8 @@ public class Server {
                 //为当前登录成功的socket分配一个独立的线程处理与之通信
                 //代码更新
                 //emmmm
+                //数据
+
                 new ServerReaderThread(socket);
             }
         } catch (IOException e) {
